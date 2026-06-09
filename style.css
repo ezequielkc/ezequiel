@@ -319,12 +319,12 @@ ul, ol { list-style: none; }
 .sobre__inner { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: clamp(32px, 6vw, 80px); align-items: center; }
 .sobre__photo {
   aspect-ratio: 4 / 5; border-radius: var(--radius); overflow: hidden;
-  background: linear-gradient(160deg, var(--paper-2), #dfe2dd);
+  background-image: url('ezequiel.jpg');
+  background-size: cover; background-position: center 20%;
   border: 1px solid var(--hairline);
   display: grid; place-items: center;
-  /* Para usar foto real: background-image: url('ezequiel.jpg'); background-size: cover; */
 }
-.sobre__photo-fallback { font-family: var(--font-display); font-weight: 800; font-size: 64px; color: var(--hairline); }
+.sobre__photo-fallback { display: none; }
 .sobre__text p { color: var(--graphite); margin-top: 18px; max-width: 56ch; }
 .sobre__text p:first-of-type { margin-top: 26px; }
 .sobre__text strong { color: var(--ink); font-weight: 600; }
