@@ -71,6 +71,15 @@
       }
 
       e.preventDefault();
+
+      // Anti-spam: se o honeypot veio preenchido, é bot — finge sucesso e não envia.
+      var hp = form.querySelector('input[name="_gotcha"]');
+      if (hp && hp.value) {
+        form.reset();
+        showStatus("Recebido. Retorno em breve para marcarmos a conversa.", "ok");
+        return;
+      }
+
       var btn = form.querySelector('button[type="submit"]');
       var original = btn ? btn.textContent : "";
       if (btn) { btn.disabled = true; btn.textContent = "Enviando…"; }

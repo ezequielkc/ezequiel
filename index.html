@@ -76,8 +76,8 @@
         <p class="eyebrow reveal">Consultoria de performance e estratégia de crescimento</p>
 
         <h1 class="hero__title reveal">
-          Estratégia de crescimento —<br />
-          <span class="hero__title-accent">do diagnóstico à execução,</span><br />
+          Estratégia de crescimento —<br class="hero__br" />
+          <span class="hero__title-accent">do diagnóstico à execução,</span><br class="hero__br" />
           sob um único critério.
         </h1>
 
@@ -222,19 +222,33 @@
     <section class="section engine" id="konge">
       <div class="wrap">
         <p class="eyebrow eyebrow--light">A estrutura de execução</p>
+
+        <!-- Wordmark da Konge. Se tiver o logo oficial, troque este bloco por:
+             <img src="konge-logo.svg" alt="Konge" class="engine__logo" /> -->
+        <div class="engine__brand">
+          <span class="engine__wordmark">konge<span class="engine__dot">.</span></span>
+          <span class="engine__brand-tag">sócio &amp; co-arquiteto</span>
+        </div>
+
         <h2 class="section__title section__title--light">Estratégia sem execução é slide.</h2>
         <p class="section__lead section__lead--light">
           Por isso eu não dependo de terceiros para entregar o que projeto. Sou sócio da <strong>Konge</strong> —
           a estrutura de mídia paga, CRM e tecnologia que executa o crescimento no padrão que ajudei a construir.
+          Quando seu projeto pede implementação, ela não é terceirizada para o desconhecido.
         </p>
 
         <div class="engine__scp">
-          <p class="engine__scp-eyebrow">O motor de execução</p>
+          <p class="engine__scp-eyebrow">O motor de execução · SCP</p>
           <p class="engine__scp-text">
-            Lá, a entrega roda sobre o <strong>SCP — Sistema de Crescimento Previsível</strong>:
-            o método que estruturamos para transformar investimento em marketing em crescimento constante,
-            com inteligência contínua sobre os dados.
+            A entrega roda sobre o <strong>SCP — Sistema de Crescimento Previsível</strong>:
+            o método que estruturamos para transformar investimento em marketing em crescimento constante.
           </p>
+          <ul class="scp-pillars" aria-label="Etapas do SCP">
+            <li><span class="scp-pillars__n">01</span> Diagnóstico</li>
+            <li><span class="scp-pillars__n">02</span> Estratégia</li>
+            <li><span class="scp-pillars__n">03</span> Execução integrada</li>
+            <li><span class="scp-pillars__n">04</span> Inteligência contínua</li>
+          </ul>
         </div>
 
         <!-- Números atribuídos à ESTRUTURA (Konge), não como resultados pessoais -->
@@ -258,10 +272,16 @@
         </div>
         <p class="stats__note">Resultados da estrutura de execução (Konge), onde atuo como sócio.</p>
 
-        <a class="btn btn--purple" href="https://konge.com.br" target="_blank" rel="noopener">
-          Conhecer a Konge
-          <span aria-hidden="true">→</span>
-        </a>
+        <div class="engine__cta">
+          <div class="engine__cta-text">
+            <p class="engine__cta-title">Veja a estrutura por dentro.</p>
+            <p class="engine__cta-sub">Como a Konge opera o crescimento das empresas que atende.</p>
+          </div>
+          <a class="btn btn--purple btn--lg" href="https://konge.com.br" target="_blank" rel="noopener">
+            Conhecer a Konge
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -309,7 +329,12 @@
         </p>
 
         <!-- IMPORTANTE: troque o action pelo seu endpoint Formspree (instruções no README) -->
-        <form class="form" action="https://formspree.io/f/SEU_ID_FORMSPREE" method="POST" novalidate>
+        <form class="form" action="https://formspree.io/f/mwvjqpdy" method="POST" novalidate>
+          <!-- Anti-spam (honeypot): invisível para humanos. Se vier preenchido, é bot e o envio é descartado. -->
+          <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <!-- Assunto do e-mail que você recebe -->
+          <input type="hidden" name="_subject" value="Novo contato pelo site — ezequielkowalski.com.br" />
+
           <div class="form__row">
             <label class="field">
               <span class="field__label">Nome</span>
@@ -348,8 +373,6 @@
             <p class="form__alt">
               Prefere direto?
               <a href="https://wa.me/55SEUNUMERO" target="_blank" rel="noopener">WhatsApp</a>
-              ·
-              <a href="mailto:contato@ezequielkowalski.com.br">e-mail</a>
             </p>
           </div>
 
